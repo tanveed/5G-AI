@@ -10,13 +10,13 @@
       let socket = io();
       let el;
 
-      socket.on('time', (like) => {
+      socket.on('like', (like) => {
         el = document.getElementById('like');
-        el.innerHTML = 'Like';
+        el.innerHTML = 'Like: ' + like;
       });
-      socket.on('time', (dislike) => {
+      socket.on('dislike', (dislike) => {
         el = document.getElementById('dislike');
-        el.innerHTML = 'Dislike';
+        el.innerHTML = 'Dislike: ' + dislike;
       });
     </script>
   </head>
