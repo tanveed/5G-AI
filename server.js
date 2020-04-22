@@ -17,5 +17,5 @@ io.on('connection', (socket) => {
   socket.on('disconnect', () => console.log('Client disconnected'));
 });
 
-setInterval(() => io.emit('like', 'we will show you more like this'), 1000);
-setInterval(() => io.emit('dislike', 'we will show you less like this'), 1000);
+setInterval(() => io.emit('like', 'we will show you more like this'), 1000); // would change if 2 hololenses
+setInterval(() => io.emit('dislike', 'we will show you less like this'), 1000); // would change if 2 hololenses
